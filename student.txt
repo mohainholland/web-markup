@@ -1,5 +1,5 @@
 Student name: Mohammed Al Haffar
 Student number: 768685
 Student class: 1B
-GitHub Repository: 
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/mohainholland/web-markup
+GitHub Pages URL: https://mohainholland.github.io/web-markup/

@@ -1,42 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nature Near You</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nature Near You</title>
+	<meta name="author" content="Mohammed Al Haffar">
+	<meta name="description" content="Nature Near You helps you find beaches, rivers, forests and lakes near the city, with easy routes by train, bus or bike.">
+	<meta name="keywords" content="nature, beaches, rivers, forests, lakes">
+	<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <div class="logo">
-  <img src="https://i.postimg.cc/VvyxwTHT/2aae48a1-e2ee-42fd-9e96-7f7df5c7f599-(2).png" alt="Nature Near You Logo">
-  <h1>Nature Near You</h1>
-</div>
+	<header>
+		<a href="index.html"><img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="logo"></a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="beaches.html">Beaches</a></li>
-      <li><a href="rivers.html">Rivers</a></li>
-      <li><a href="forests.html">Forests</a></li>
-      <li><a href="lakes.html">Lakes</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
+		<!-- only visible on phones -->
+		<a href="#menu" class="menu-button">&#9776;</a>
 
-<section class="hero">
-  <h2>Find real nature close to the city</h2>
-  <p>Easy routes by train and bus.</p>
-  <a href="beaches.html" class="hero-button">Explore nearby nature</a>
-</section>
+		<nav id="menu">
+			<!-- only visible when the phone menu is open -->
+			<p class="menu-top">
+				<img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="logo">
+				<a href="#" class="menu-button">&#10005;</a>
+			</p>
 
-  <p>A lot of people think there is not much nature in the Netherlands. But there are beaches, forests, rivers and lakes, often less than two hours away.</p>
+			<ul class="nav-list">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="beaches.html">Beaches</a></li>
+				<li><a href="rivers.html">Rivers</a></li>
+				<li><a href="forests.html">Forests</a></li>
+				<li><a href="lakes.html">Lakes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-  <footer>
-    <p>Copyright 2026 Nature Near You</p>
-  </footer>
+	<main>
+
+		<section class="hero">
+			<h1>Nature Near You</h1>
+			<p>Find real nature close to the city, with easy routes by train, bus, bike, or on foot.</p>
+			<a href="#collections" class="button">Plan your trip</a>
+			<figure class="container">
+				<img src="img/home-hero.jpg" alt="Heather field at sunset with a tree and a grazing horse" title="Heather field at sunset with a tree and a grazing horse" class="hero-photo">
+				<figcaption>Sunset over the heather in the Veluwe</figcaption>
+			</figure>
+		</section>
+
+		<section class="intro">
+			<article class="container">
+				<p>A lot of people think there's not much nature in the Netherlands. But there's actually beaches, forests, rivers and lakes, often less than two hours away.</p>
+				<p>Every area on this site has info on how to get there by public transport, what you can do once you're there, and the best time to visit.</p>
+				<p>Got an afternoon or a <em>whole</em> day? You'll find a trip that fits.</p>
+			</article>
+		</section>
+
+		<section class="photo-strip">
+			<aside class="container photo-row">
+				<img src="img/home-strip-1.jpg" alt="Beach at sunset" title="Beach at sunset">
+				<img src="img/home-strip-2.jpg" alt="Deer crossing a path through purple heather" title="Deer crossing a path through purple heather">
+				<img src="img/home-strip-3.jpg" alt="Windmill next to a river" title="Windmill next to a river">
+			</aside>
+		</section>
+
+		<section class="collections" id="collections">
+			<article class="container">
+				<h2>Find Nature Near You</h2>
+				<p class="subtitle">Pick a landscape and we will show you how to get there by train, bus, bike, or on foot.</p>
+
+				<a href="beaches.html" class="card">
+					<article>
+						<p class="card-number">01 &mdash; Collection</p>
+						<h3>Beaches</h3>
+						<p>Wide sandy beaches and dunes, about 30 minutes from the city by bus or train.</p>
+						<span class="card-link">Explore Beaches &rarr;</span>
+					</article>
+					<img src="img/card-beaches.jpg" alt="Aerial view of a long sandy beach next to a coastal town" title="Aerial view of a long sandy beach next to a coastal town">
+				</a>
+
+				<a href="rivers.html" class="card">
+					<article>
+						<p class="card-number">02 &mdash; Collection</p>
+						<h3>Rivers</h3>
+						<p>Rivers, reeds and quiet water, about an hour from the city.</p>
+						<span class="card-link">Explore Rivers &rarr;</span>
+					</article>
+					<img src="img/card-rivers.jpg" alt="River with reeds in front of an old village" title="River with reeds in front of an old village">
+				</a>
+
+				<a href="forests.html" class="card">
+					<article>
+						<p class="card-number">03 &mdash; Collection</p>
+						<h3>Forests</h3>
+						<p>Forest and open land, with a free bike once you&#x27;re there.</p>
+						<span class="card-link">Explore Forests &rarr;</span>
+					</article>
+					<img src="img/card-forests.jpg" alt="Purple heather and trees in morning mist" title="Purple heather and trees in morning mist">
+				</a>
+
+				<a href="lakes.html" class="card">
+					<article>
+						<p class="card-number">04 &mdash; Collection</p>
+						<h3>Lakes</h3>
+						<p>Open water and quiet channels around Loosdrecht, about an hour from the city.</p>
+						<span class="card-link">Explore Lakes &rarr;</span>
+					</article>
+					<img src="img/card-lakes.jpg" alt="Lake with water lilies and a rowing boat" title="Lake with water lilies and a rowing boat">
+				</a>
+
+			</article>
+		</section>
+
+	</main>
+
+	<footer>
+		<section class="footer-column footer-brand">
+			<img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="footer-logo">
+			<p class="socials">
+				<a href="#"><img src="img/icon-x.png" alt="X" title="X" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-instagram.png" alt="Instagram" title="Instagram" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-youtube.png" alt="YouTube" title="YouTube" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-linkedin.png" alt="LinkedIn" title="LinkedIn" width="24" height="24"></a>
+			</p>
+			<p class="copyright">&copy; 2026 Nature Near You</p>
+		</section>
+
+		<section class="footer-column">
+			<h4>Explore</h4>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="beaches.html">Beaches</a></li>
+				<li><a href="rivers.html">Rivers</a></li>
+				<li><a href="forests.html">Forests</a></li>
+				<li><a href="lakes.html">Lakes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-column">
+			<h4>Getting There</h4>
+			<ul>
+				<li><a href="#">By Train</a></li>
+				<li><a href="#">By Bus</a></li>
+				<li><a href="#">By Bike</a></li>
+				<li><a href="#">On Foot</a></li>
+				<li><a href="#">Best Season</a></li>
+				<li><a href="#">Safety Tips</a></li>
+				<li><a href="#">Accessibility</a></li>
+				<li><a href="#">Maps</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-column">
+			<h4>Site</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Credits</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+		</section>
+	</footer>
+
+	<!-- cookie message: the OK link points to #cookies, :target hides it -->
+	<aside id="cookies" class="cookies">
+		<p>This website uses cookies to remember your choices. <a href="#cookies" class="cookie-button">OK</a></p>
+	</aside>
 
 </body>
 </html>

@@ -1,49 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - Nature Near You</title>
+	<meta name="author" content="Mohammed Al Haffar">
+	<meta name="description" content="Nature Near You helps you find beaches, rivers, forests and lakes near the city, with easy routes by train, bus or bike.">
+	<meta name="keywords" content="nature, beaches, rivers, forests, lakes">
+	<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Contact</h1>
+	<header>
+		<a href="index.html"><img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="logo"></a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="beaches.html">Beaches</a></li>
-      <li><a href="rivers.html">Rivers</a></li>
-      <li><a href="forests.html">Forests</a></li>
-      <li><a href="lakes.html">Lakes</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
+		<!-- only visible on phones -->
+		<a href="#menu" class="menu-button">&#9776;</a>
 
-  <p>Can not find a route, or know a spot that is missing from the site? Send a message below.</p>
+		<nav id="menu">
+			<!-- only visible when the phone menu is open -->
+			<p class="menu-top">
+				<img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="logo">
+				<a href="#" class="menu-button">&#10005;</a>
+			</p>
 
-  <form action=
-    "https://next-app-router-playground-kohl.vercel.app/api/contact" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" style="display: block;">
-    
-    
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" style="display: block;">
-    
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="beaches.html">Beaches</a></li>
+				<li><a href="rivers.html">Rivers</a></li>
+				<li><a href="forests.html">Forests</a></li>
+				<li><a href="lakes.html">Lakes</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message"style="display: block;"> </textarea> 
- 
-    <button type="submit">Send message</button>
-  </form>
+	<main>
 
-  <footer>
-    <p>Copyright 2026 Nature Near You</p>
-  </footer>
+		<section class="page-title">
+			<h1>Contact</h1>
+			<p>Can't find a route, or know a spot that's missing from the site? Send a message.</p>
+		</section>
+
+		<section class="page-content">
+			<section class="container contact-row">
+
+				<article class="contact-form">
+					<form action="https://next-app-router-playground-kohl.vercel.app/api/contact" method="POST">
+						<p class="small-text"><strong>*</strong> Required field</p>
+
+						<fieldset class="radios">
+							<legend class="label">Salutation *</legend>
+							<label class="radio"><input type="radio" name="salutation" value="mr" required> Mr.</label>
+							<label class="radio"><input type="radio" name="salutation" value="ms"> Ms.</label>
+							<label class="radio"><input type="radio" name="salutation" value="none"> Prefer not to say</label>
+						</fieldset>
+
+						<label for="name" class="label">Name *</label>
+						<input type="text" id="name" name="name" placeholder="Your name" class="input" required>
+
+						<label for="email" class="label">Email address *</label>
+						<input type="email" id="email" name="email" placeholder="you@example.com" class="input" required>
+
+						<label for="phone" class="label">Phone number (optional)</label>
+						<input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" class="input">
+
+						<label for="message" class="label">Question or request *</label>
+						<textarea id="message" name="message" placeholder="Type your message here..." class="input message-box" required></textarea>
+
+						<input type="submit" value="Send message" class="button">
+					</form>
+
+					<a href="index.html" class="button button-white back-button">&larr; Back to Home</a>
+				</article>
+
+				<img src="img/contact-main.jpg" alt="Wooden blocks with phone, email and @ symbols" title="Wooden blocks with phone, email and @ symbols" class="contact-photo">
+
+			</section>
+		</section>
+
+		<section class="photo-strip">
+			<aside class="container photo-row">
+				<img src="img/contact-strip-1.jpg" alt="Purple heather and trees in morning mist" title="Purple heather and trees in morning mist">
+				<img src="img/contact-strip-2.jpg" alt="Beach at sunset" title="Beach at sunset">
+			</aside>
+		</section>
+
+	</main>
+
+	<footer>
+		<section class="footer-column footer-brand">
+			<img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="footer-logo">
+			<p class="socials">
+				<a href="#"><img src="img/icon-x.png" alt="X" title="X" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-instagram.png" alt="Instagram" title="Instagram" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-youtube.png" alt="YouTube" title="YouTube" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-linkedin.png" alt="LinkedIn" title="LinkedIn" width="24" height="24"></a>
+			</p>
+			<p class="copyright">&copy; 2026 Nature Near You</p>
+		</section>
+
+		<section class="footer-column">
+			<h4>Explore</h4>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="beaches.html">Beaches</a></li>
+				<li><a href="rivers.html">Rivers</a></li>
+				<li><a href="forests.html">Forests</a></li>
+				<li><a href="lakes.html">Lakes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-column">
+			<h4>Getting There</h4>
+			<ul>
+				<li><a href="#">By Train</a></li>
+				<li><a href="#">By Bus</a></li>
+				<li><a href="#">By Bike</a></li>
+				<li><a href="#">On Foot</a></li>
+				<li><a href="#">Best Season</a></li>
+				<li><a href="#">Safety Tips</a></li>
+				<li><a href="#">Accessibility</a></li>
+				<li><a href="#">Maps</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-column">
+			<h4>Site</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Credits</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+		</section>
+	</footer>
+
+	<!-- cookie message: the OK link points to #cookies, :target hides it -->
+	<aside id="cookies" class="cookies">
+		<p>This website uses cookies to remember your choices. <a href="#cookies" class="cookie-button">OK</a></p>
+	</aside>
 
 </body>
 </html>

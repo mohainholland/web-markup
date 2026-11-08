@@ -1,41 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beaches</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beaches - Nature Near You</title>
+	<meta name="author" content="Mohammed Al Haffar">
+	<meta name="description" content="Nature Near You helps you find beaches, rivers, forests and lakes near the city, with easy routes by train, bus or bike.">
+	<meta name="keywords" content="nature, beaches, rivers, forests, lakes">
+	<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Beaches</h1>
+	<header>
+		<a href="index.html"><img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="logo"></a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="beaches.html">Beaches</a></li>
-      <li><a href="rivers.html">Rivers</a></li>
-      <li><a href="forests.html">Forests</a></li>
-      <li><a href="lakes.html">Lakes</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
+		<!-- only visible on phones -->
+		<a href="#menu" class="menu-button">&#9776;</a>
 
-  <p>Wide sandy beaches and dunes, about 30 minutes from the city by bus or train.</p>
+		<nav id="menu">
+			<!-- only visible when the phone menu is open -->
+			<p class="menu-top">
+				<img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="logo">
+				<a href="#" class="menu-button">&#10005;</a>
+			</p>
 
-  <p>The coast has long beaches, sand dunes, and walking paths right next to the sea.</p>
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="beaches.html" class="active">Beaches</a></li>
+				<li><a href="rivers.html">Rivers</a></li>
+				<li><a href="forests.html">Forests</a></li>
+				<li><a href="lakes.html">Lakes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-  <p>Take a short train ride to a coastal town, then a local bus to the beach.</p>
+	<main>
 
-  <p>You can find a quick walk near the entrance, or a longer walk all the way to the beach. Bring water, there is not much to buy out there.</p>
+		<section class="page-hero hero-beaches">
+			<h1>Beaches</h1>
+			<p>Wide sandy beaches and dunes, about 30 minutes from the city by bus or train.</p>
+		</section>
 
-  <img src="" alt="Sand dunes with a walking path and the sea in the distance">
+		<section class="page-content">
+			<article class="container">
 
-  <footer>
-    <p>Copyright 2026 Nature Near You</p>
-  </footer>
+				<section class="row">
+					<article class="row-text">
+						<p>The coast has long beaches, sand dunes, and walking paths right next to the sea.</p>
+						<p>Take a short train ride to a coastal town, then a local bus to the beach.</p>
+						<p>The beach stretches for miles, with a few beach clubs near the entrance and much quieter sand further along.</p>
+						<p>Bring a windbreaker, even in summer: the wind off the sea can be stronger than you expect.</p>
+					</article>
+					<img src="img/beaches-1.jpg" alt="Aerial view of a long sandy beach next to a coastal town" title="Aerial view of a long sandy beach next to a coastal town" class="row-photo">
+				</section>
+
+				<p class="row">You can find a quick walk near the entrance, or a longer walk all the way to the beach. Bring water, there&#x27;s not much to buy out there.</p>
+
+				<section class="row">
+					<img src="img/beaches-2.jpg" alt="Beach pavilion with string lights at sunset" title="Beach pavilion with string lights at sunset" class="row-photo">
+					<aside class="info-box">
+						<h4>Nearest station</h4>
+						<p>Zandvoort aan Zee or Scheveningen, both a direct train from the city.</p>
+
+						<h4>By bus</h4>
+						<p>A direct bus connects the station to the beach entrance in a few minutes.</p>
+
+						<h4>By bike</h4>
+						<p>Flat, signed bike paths run along most of the coast if you&#x27;d rather cycle than take the bus.</p>
+
+						<h4>Lifeguard season</h4>
+						<p>Flags and lifeguards are only up from May to September.</p>
+					</aside>
+				</section>
+
+				<section class="row">
+					<article class="row-text">
+						<p>Zandvoort and Scheveningen are the easiest beaches to reach, both under an hour from the city by direct train.</p>
+						<p>Expect busy terraces in summer and quiet open sand in autumn and spring.</p>
+						<p>Both towns have plenty of places to eat, from beach pavilions to simple snack bars near the station.</p>
+						<p>Check the weather before you go. A sunny day in the city can still be cloudy at the coast.</p>
+					</article>
+					<img src="img/beaches-3.jpg" alt="Wet sand reflecting the sunset" title="Wet sand reflecting the sunset" class="row-photo">
+				</section>
+
+				<section class="row">
+					<img src="img/beaches-4.jpg" alt="Fish sculpture in the dunes above the beach" title="Fish sculpture in the dunes above the beach" class="row-photo">
+					<article class="row-text">
+						<p>Bike paths run along most of the coast if you want to explore further.</p>
+						<p>The dunes behind the beach have marked walking routes, with views over the sea from the higher paths.</p>
+						<p>Go early in the morning for the quietest sand and the best light for photos.</p>
+						<p>Most beach pavilions rent out deck chairs and umbrellas in summer, so you don&#x27;t need to bring your own.</p>
+					</article>
+				</section>
+
+				<p class="buttons">
+					<a href="rivers.html" class="button">Next trip: Rivers &rarr;</a>
+				</p>
+
+			</article>
+		</section>
+
+	</main>
+
+	<footer>
+		<section class="footer-column footer-brand">
+			<img src="img/logo.svg" alt="Nature Near You logo" title="Nature Near You logo" class="footer-logo">
+			<p class="socials">
+				<a href="#"><img src="img/icon-x.png" alt="X" title="X" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-instagram.png" alt="Instagram" title="Instagram" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-youtube.png" alt="YouTube" title="YouTube" width="24" height="24"></a>
+				<a href="#"><img src="img/icon-linkedin.png" alt="LinkedIn" title="LinkedIn" width="24" height="24"></a>
+			</p>
+			<p class="copyright">&copy; 2026 Nature Near You</p>
+		</section>
+
+		<section class="footer-column">
+			<h4>Explore</h4>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="beaches.html">Beaches</a></li>
+				<li><a href="rivers.html">Rivers</a></li>
+				<li><a href="forests.html">Forests</a></li>
+				<li><a href="lakes.html">Lakes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-column">
+			<h4>Getting There</h4>
+			<ul>
+				<li><a href="#">By Train</a></li>
+				<li><a href="#">By Bus</a></li>
+				<li><a href="#">By Bike</a></li>
+				<li><a href="#">On Foot</a></li>
+				<li><a href="#">Best Season</a></li>
+				<li><a href="#">Safety Tips</a></li>
+				<li><a href="#">Accessibility</a></li>
+				<li><a href="#">Maps</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-column">
+			<h4>Site</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Credits</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+		</section>
+	</footer>
+
+	<!-- cookie message: the OK link points to #cookies, :target hides it -->
+	<aside id="cookies" class="cookies">
+		<p>This website uses cookies to remember your choices. <a href="#cookies" class="cookie-button">OK</a></p>
+	</aside>
 
 </body>
 </html>
