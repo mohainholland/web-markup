@@ -1,1 +1,126 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+/* styles for the homepage */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin: 0;
+  
+}
+
+header {
+  background-color: white;
+  color: #222;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #4f7a07;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  display: block;
+}
+
+nav a:hover {
+  color: #4f7a07;
+}
+ 
+p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  text-indent: 20px;
+}
+ 
+img {
+  max-width: 100%;
+}
+ 
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+ 
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px;
+}
+ 
+label {
+  margin-top: 10px;
+}
+ 
+input,
+textarea,
+button {
+  margin-top: 5px;
+  padding: 5px;
+}
+ 
+.hero {
+  background: linear-gradient(135deg, #4f7a07, #2f4d06);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  text-indent: 0;
+  font-size: 1.2rem;
+  margin: 0 0 24px;
+}
+
+.hero-button {
+  display: inline-block;
+  background: white;
+  color: #4f7a07;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
